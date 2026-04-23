@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-gray-100 text-gray-900 m-0 p-0;
+  }
+}
+
+/* Watermark styles */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40rem;
+  font-weight: bold;
+  color: #f1f5f9;
+  z-index: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  font-family: sans-serif;
+}
